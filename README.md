@@ -48,3 +48,18 @@ Note: if we wish to find a patch in an image we will use
 norm= normalized_cross_correlation as an hyperparameter and pass it through a threshhold.
 
 
+
+# Summary And Conclusion
+
+In conclusion to this project, the problem was to create an improved and argument versatile Convolution/Correlation function and to create a basic Convolutional Layer resulting with better feature extraction.
+In addition I have imlemented a RelU activation function as well as a normalized cross validation option to the myconv function which allows the possibility to search for objects in the image and detecting their location in the image after thresholding the normalized image.
+I have also proved that my convolution works precisely in the following check:
+I have convolved an original image with 3x3x3, 5x5x3, 7x7x3 identity filters with the corresponding hyper parameter P = 1, 2, 3 for each filter size to get the exact same image dimentions as the input of the original image.
+I have gotten a difference of zero between each convolved image and the original image, showing that the convolution is precise.
+Using the convolution I have cascaded 2 layers of the Afeka Logo and thus combined 2 types of filters in a row resulting in more complex feature selection.
+I have also Found Einstein's eye using the normalized cross validation as shown in the results section by convolving the image with an 15x15 eye patch of the original image.
+All of the things I have implemented in this project will surely be used in the near future to implement more complex Convolutional Neural Networks for better feature extraction and better results.
+
+Thanks for reading,
+				 Daniel Ivkovich.
+
